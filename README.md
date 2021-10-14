@@ -2,7 +2,7 @@
 
 ![Screenshot 2021-10-14 164609](https://user-images.githubusercontent.com/71510774/137401355-94e0654f-a2bb-4880-a875-4b03d818cb70.png)
 
-# Scripts SQL de criação das tabelas que compõem a estrutura do banco de dados:
+# Scripts SQL de criação das tabelas que compõem a estrutura do banco de dados EstrelaDaMorte:
 ### 1️⃣TABELA Planetas 
 ```SQL
 USE EstrelaDaMorte

@@ -3,7 +3,7 @@
 ![Screenshot 2021-10-14 164609](https://user-images.githubusercontent.com/71510774/137401355-94e0654f-a2bb-4880-a875-4b03d818cb70.png)
 
 # Scripts SQL de criação das tabelas que compõem a estrutura do banco de dados:
-### 1️⃣TABELA PLANETAS 
+### 1️⃣TABELA Planetas 
 ```SQL
 USE EstrelaDaMorte
 
@@ -20,7 +20,7 @@ GO
 ALTER TABLE Planetas ADD CONSTRAINT PK_Planetas PRIMARY KEY (IdPlaneta);
 GO
 ```
-### 2️⃣TABELA NAVES 
+### 2️⃣TABELA Naves 
 ```SQL
 CREATE TABLE Naves(
 	IdNave int NOT NULL,
@@ -34,7 +34,7 @@ GO
 ALTER TABLE Naves ADD CONSTRAINT PK_Naves PRIMARY KEY (IdNave);
 GO
 ```
-### 3️⃣TABELA PILOTOS 
+### 3️⃣TABELA Pilotos 
 ```SQL
 CREATE TABLE Pilotos(
 	IdPiloto int NOT NULL,
@@ -51,7 +51,7 @@ GO
 ALTER TABLE Pilotos CHECK CONSTRAINT FK_Pilotos_Planetas
 GO
 ```
-### 4️⃣TABELA PILOTOSNAVES
+### 4️⃣TABELA PilotosNaves
 ```SQL
 CREATE TABLE PilotosNaves(
 	IdPiloto int NOT NULL,
@@ -70,7 +70,7 @@ GO
 ALTER TABLE PilotosNaves  ADD CONSTRAINT DF_PilotosNaves_FlagAutorizado  DEFAULT (1) FOR FlagAutorizado
 GO
 ```
-### 5️⃣TABELA HISTORICODEVIAGENS
+### 5️⃣TABELA HistoricoViagens
 ```SQL
 CREATE TABLE HistoricoViagens(
 	IdNave int NOT NULL,
